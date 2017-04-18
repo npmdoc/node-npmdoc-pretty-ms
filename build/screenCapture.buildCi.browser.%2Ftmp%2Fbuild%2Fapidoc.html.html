@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/sindresorhus/pretty-ms"
-
-    >pretty-ms (v2.1.0)</a>
+    <a href="https://github.com/sindresorhus/pretty-ms">pretty-ms (v2.1.0)</a>
 </h1>
-<h4>Convert milliseconds to a human readable string: 1337000000 → 15d 11h 23m 20s</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<h4>Convert milliseconds to a human readable string: 1337000000 â†’ 15d 11h 23m 20s</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.pretty-ms">module pretty-ms</a><ol>
 
@@ -87,15 +80,15 @@
     <ul>
     <li>description and source-code<pre class="apidocCodePre">pretty-ms = function (ms, opts) {
 	if (!isFinitePonyfill(ms)) {
-		throw new TypeError(&#x27;Expected a finite number&#x27;);
+		throw new TypeError('Expected a finite number');
 	}
 
 	opts = opts || {};
 
-	if (ms &#x3c; 1000) {
-		var msDecimalDigits = typeof opts.msDecimalDigits === &#x27;number&#x27; ? opts.msDecimalDigits : 0;
-		return (msDecimalDigits ? ms.toFixed(msDecimalDigits) : Math.ceil(ms)) + (opts.verbose ? &#x27; &#x27; + plur(&#x27;millisecond&#x27;, Math.ceil(ms
-)) : &#x27;ms&#x27;);
+	if (ms &lt; 1000) {
+		var msDecimalDigits = typeof opts.msDecimalDigits === 'number' ? opts.msDecimalDigits : 0;
+		return (msDecimalDigits ? ms.toFixed(msDecimalDigits) : Math.ceil(ms)) + (opts.verbose ? ' ' + plur('millisecond', Math.ceil(ms
+)) : 'ms');
 	}
 
 	var ret = [];
@@ -105,28 +98,28 @@
 			return;
 		}
 
-		var postfix = opts.verbose ? &#x27; &#x27; + plur(long, val) : short;
+		var postfix = opts.verbose ? ' ' + plur(long, val) : short;
 
 		ret.push((valStr || val) + postfix);
 	};
 
 	var parsed = parseMs(ms);
 
-	add(parsed.days, &#x27;day&#x27;, &#x27;d&#x27;);
-	add(parsed.hours, &#x27;hour&#x27;, &#x27;h&#x27;);
-	add(parsed.minutes, &#x27;minute&#x27;, &#x27;m&#x27;);
+	add(parsed.days, 'day', 'd');
+	add(parsed.hours, 'hour', 'h');
+	add(parsed.minutes, 'minute', 'm');
 
 	if (opts.compact) {
-		add(parsed.seconds, &#x27;second&#x27;, &#x27;s&#x27;);
-		return &#x27;~&#x27; + ret[0];
+		add(parsed.seconds, 'second', 's');
+		return '~' + ret[0];
 	}
 
 	var sec = ms / 1000 % 60;
-	var secDecimalDigits = typeof opts.secDecimalDigits === &#x27;number&#x27; ? opts.secDecimalDigits : 1;
-	var secStr = sec.toFixed(secDecimalDigits).replace(/\.0$/, &#x27;&#x27;);
-	add(sec, &#x27;second&#x27;, &#x27;s&#x27;, secStr);
+	var secDecimalDigits = typeof opts.secDecimalDigits === 'number' ? opts.secDecimalDigits : 1;
+	var secStr = sec.toFixed(secDecimalDigits).replace(/\.0$/, '');
+	add(sec, 'second', 's', secStr);
 
-	return ret.join(&#x27; &#x27;);
+	return ret.join(' ');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -140,3 +133,4 @@
     ]
 </div>
 </div>
+</body></html>
