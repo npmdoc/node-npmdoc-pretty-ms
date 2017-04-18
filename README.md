@@ -1,9 +1,14 @@
-# api documentation for  [pretty-ms (v2.1.0)](https://github.com/sindresorhus/pretty-ms)  [![npm package](https://img.shields.io/npm/v/npmdoc-pretty-ms.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-pretty-ms) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-pretty-ms.svg)](https://travis-ci.org/npmdoc/node-npmdoc-pretty-ms)
+# npmdoc-pretty-ms
+
+#### api documentation for  [pretty-ms (v2.1.0)](https://github.com/sindresorhus/pretty-ms)  [![npm package](https://img.shields.io/npm/v/npmdoc-pretty-ms.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-pretty-ms) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-pretty-ms.svg)](https://travis-ci.org/npmdoc/node-npmdoc-pretty-ms)
+
 #### Convert milliseconds to a human readable string: 1337000000 → 15d 11h 23m 20s
 
-[![NPM](https://nodei.co/npm/pretty-ms.png?downloads=true)](https://www.npmjs.com/package/pretty-ms)
+[![NPM](https://nodei.co/npm/pretty-ms.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/pretty-ms)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-pretty-ms/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-pretty-ms_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-pretty-ms/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-pretty-ms/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-pretty-ms/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-pretty-ms/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-pretty-ms/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-pretty-ms/build/screenCapture.npmPackageListing.svg)
 
@@ -18,7 +23,6 @@
 {
     "author": {
         "name": "Sindre Sorhus",
-        "email": "sindresorhus@gmail.com",
         "url": "sindresorhus.com"
     },
     "bugs": {
@@ -68,13 +72,11 @@
     "license": "MIT",
     "maintainers": [
         {
-            "name": "sindresorhus",
-            "email": "sindresorhus@gmail.com"
+            "name": "sindresorhus"
         }
     ],
     "name": "pretty-ms",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/sindresorhus/pretty-ms.git"
@@ -85,16 +87,6 @@
     "version": "2.1.0"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module pretty-ms](#apidoc.module.pretty-ms)
-
-
-
-# <a name="apidoc.module.pretty-ms"></a>[module pretty-ms](#apidoc.module.pretty-ms)
 
 
 
